@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "marp -s",
-    "build": "marp && cp src/index.html public"
+    "build": "marp"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,7 @@
     "@marp-team/marp-cli": "^2.5.0"
   },
   "marp": {
-    "inputDir": "./slides/input",
-    "output": "./slides/output"
+    "inputDir": "./slides",
+    "output": "./docs"
   }
 }
