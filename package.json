@@ -14,7 +14,7 @@
     "@marp-team/marp-cli": "^2.5.0"
   },
   "marp": {
-    "inputDir": "./slides/input",
-    "output": "./docs/output"
+    "inputDir": "./slides",
+    "output": "./docs"
   }
 }
