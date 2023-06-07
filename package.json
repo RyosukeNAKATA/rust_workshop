@@ -12,9 +12,5 @@
   "license": "ISC",
   "devDependencies": {
     "@marp-team/marp-cli": "^2.5.0"
-  },
-  "marp": {
-    "inputDir": "./slides",
-    "output": "./docs"
-  }
+  } 
 }

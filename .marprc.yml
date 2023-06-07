@@ -1,0 +1,3 @@
+lang: ja-JP
+inputDir: "./slides"
+output: "./docs"
