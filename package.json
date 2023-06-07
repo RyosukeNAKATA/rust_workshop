@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "marp -s",
-    "build": "marp"
+    "build": "marp && cp slides/index.html public"
   },
   "keywords": [],
   "author": "",
