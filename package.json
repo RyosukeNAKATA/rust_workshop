@@ -5,16 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "marp -s",
-    "build": "marp"
+    "build": "marp && cp slides/index.html public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@marp-team/marp-cli": "^2.5.0"
-  },
-  "marp": {
-    "inputDir": "./slides",
-    "output": "./docs"
-  }
+  } 
 }
