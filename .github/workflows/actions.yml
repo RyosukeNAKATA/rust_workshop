@@ -1,7 +1,3 @@
-permissions:
-  contents: read
-  pages: write
-
 name: Publish GitHub Pages
 on:
   push:
