@@ -44,64 +44,6 @@
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
-<p>2019年7月22日（米国時間）<br />
-Microsoftが「C」や「C++」に代わるシステムプログラミング言語には何がふさわしいのか、最有力の選択肢として「Rust」を挙げ、理由を解説した</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
-<p>Microsoft「Microsoftのセキュリティ問題のうち70％程度が、メモリの安全性に関わるもの」</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
-<p>メモリの管理:mallocで確保してfreeで解放する</p>
-<p>解放済みのオブジェクトへのポインタ→未定義動作(クラッシュ、セキュリティホール)</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
-<p>メモリ制御のチェックポイント</p>
-<ul>
-<li>アクセスしようとした領域が使用できない(or不正)：ダンブリングポインタ</li>
-<li>解放済みのメモリをもう一度解放して未定義動作を起こす</li>
-<li>確保した領域をもう使っていないのに開放しない(メモリリーク)</li>
-</ul>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
-<p>メモリの制御をどうするのか？</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
-<p>メモリの制御をどうするのか？</p>
-<ul>
-<li>安全第一</li>
-<li>制御優先</li>
-</ul>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
-<p>安全第一:ガベージコレクションにメモリの管理を任せる</p>
-<p>(Python, Ruby, JavaScript, C#, Haskell...)</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
-<p>安全第一:ガベージコレクションにメモリの管理を任せる</p>
-<p>(Python, Ruby, JavaScript, C#, Haskell...)</p>
-<p>多くの言語が採用しており、オブジェクトの管理を自動的にやってくれる</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
-<p>ガベージコレクションに依存する→オブジェクト解放の厳密なタイミングを明け渡す</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
-<p>O'REILLY プログラミングRust<br />
-&quot;ガベージコレクタは恐ろしい野獣&quot;</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
-<p><img src="../images/languaeges.jpeg" alt="" style="height:700px;" /></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
-<p>制御優先:メモリの解放を開発者に委ねる<br />
-(C, C++)</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
-<p>メモリの解放を開発者に委ねる→(ミスがなければ)完璧な作戦</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
-<p>Rustの解決策→所有権(ownership)</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
 <ul>
 <li>Enumについて
 <ul>
@@ -112,7 +54,7 @@ Microsoftが「C」や「C++」に代わるシステムプログラミング言�
 </li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
 <p>Enum:列挙型</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-rust"><span class="hljs-keyword">enum</span> <span class="hljs-title class_">IpAddr</span> {
     <span class="hljs-title function_ invoke__">V4</span>(<span class="hljs-type">u8</span>, <span class="hljs-type">u8</span>, <span class="hljs-type">u8</span>, <span class="hljs-type">u8</span>),
@@ -123,7 +65,7 @@ Microsoftが「C」や「C++」に代わるシステムプログラミング言�
 <span class="hljs-keyword">let</span> <span class="hljs-variable">loopback</span> = IpAddr::<span class="hljs-title function_ invoke__">V6</span>(<span class="hljs-type">String</span>::<span class="hljs-title function_ invoke__">from</span>(<span class="hljs-string">&quot;::1&quot;</span>));
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
 <p>Option:列挙型</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-rust"><span class="hljs-keyword">enum</span> <span class="hljs-title class_">Option</span>&lt;T&gt; {
     <span class="hljs-title function_ invoke__">Some</span>(T),
@@ -131,7 +73,7 @@ Microsoftが「C」や「C++」に代わるシステムプログラミング言�
 }
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
 <p>Result:列挙型</p>
 <ul>
 <li>Ok&lt;T&gt;: 要素Tが見つかった場合</li>
@@ -143,6 +85,64 @@ Microsoftが「C」や「C++」に代わるシステムプログラミング言�
 }
 
 </code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+<p>2019年7月22日（米国時間）<br />
+Microsoftが「C」や「C++」に代わるシステムプログラミング言語には何がふさわしいのか、最有力の選択肢として「Rust」を挙げ、理由を解説した</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+<p>Microsoft「Microsoftのセキュリティ問題のうち70％程度が、メモリの安全性に関わるもの」</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+<p>メモリの管理:mallocで確保してfreeで解放する</p>
+<p>解放済みのオブジェクトへのポインタ→未定義動作(クラッシュ、セキュリティホール)</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+<p>メモリ制御のチェックポイント</p>
+<ul>
+<li>アクセスしようとした領域が使用できない(or不正)：ダンブリングポインタ</li>
+<li>解放済みのメモリをもう一度解放して未定義動作を起こす</li>
+<li>確保した領域をもう使っていないのに開放しない(メモリリーク)</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+<p>メモリの制御をどうするのか？</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+<p>メモリの制御をどうするのか？</p>
+<ul>
+<li>安全第一</li>
+<li>制御優先</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+<p>安全第一:ガベージコレクションにメモリの管理を任せる</p>
+<p>(Python, Ruby, JavaScript, C#, Haskell...)</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+<p>安全第一:ガベージコレクションにメモリの管理を任せる</p>
+<p>(Python, Ruby, JavaScript, C#, Haskell...)</p>
+<p>多くの言語が採用しており、オブジェクトの管理を自動的にやってくれる</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+<p>ガベージコレクションに依存する→オブジェクト解放の厳密なタイミングを明け渡す</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+<p>O'REILLY プログラミングRust<br />
+&quot;ガベージコレクタは恐ろしい野獣&quot;</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+<p><img src="../images/languaeges.jpeg" alt="" style="height:700px;" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+<p>制御優先:メモリの解放を開発者に委ねる<br />
+(C, C++)</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+<p>メモリの解放を開発者に委ねる→(ミスがなければ)完璧な作戦</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+<p>Rustの解決策→所有権(ownership)</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
 <p>この間のコードにも<br />
