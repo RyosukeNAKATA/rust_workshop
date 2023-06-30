@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "marp --allow-local-files -s",
-    "build": "marp --allow-local-files && cp src/index.html public && cp images/* public/images/"
+    "build": "marp --allow-local-files && cp src/index.html public && mkdir public/images/ && cp images/* public/images/"
   },
   "keywords": [],
   "author": "",
