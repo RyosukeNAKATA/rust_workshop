@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "marp -s",
-    "build": "marp && cp src/index.html public"
+    "dev": "marp --allow-local-files -s",
+    "build": "marp --allow-local-files && cp src/index.html public && mkdir public/images/ && cp images/* public/images/"
   },
   "keywords": [],
   "author": "",
