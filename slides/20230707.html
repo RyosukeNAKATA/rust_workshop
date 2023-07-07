@@ -34,7 +34,9 @@
 <p>ライフタイム</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
-<h2 id="%E3%81%9D%E3%82%82%E3%81%9D%E3%82%82%E3%83%A9%E3%82%A4%E3%83%95%E3%82%BF%E3%82%A4%E3%83%A0">そもそもライフタイム</h2>
+<p>そもそもライフタイム</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
 <p>3つのstatic</p>
 <ol>
 <li><code>static NUM: i32 = 18;</code></li>
@@ -42,11 +44,11 @@
 <li><code>fn generic&lt;T&gt;(x: T) where T: 'static {}</code></li>
 </ol>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-rust"><span class="hljs-keyword">fn</span> <span class="hljs-title function_">f</span>&lt;<span class="hljs-symbol">&#x27;a</span>&gt;(p: &amp;<span class="hljs-symbol">&#x27;a</span> <span class="hljs-type">i32</span>) { ... }
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-rust"><span class="hljs-keyword">static</span> <span class="hljs-keyword">mut</span> STASH: &amp;<span class="hljs-type">i32</span> = &amp;<span class="hljs-number">128</span>
 <span class="hljs-keyword">fn</span> <span class="hljs-title function_">f</span>(p: &amp;<span class="hljs-type">i32</span>) { 
     <span class="hljs-keyword">unsafe</span> {
@@ -55,14 +57,14 @@
 }
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
 <h5 id="%E4%BB%8A%E6%97%A5%E3%81%AE%E5%85%83%E3%83%8D%E3%82%BF">今日の元ネタ</h5>
 <ul>
 <li><a href="https://techblog.paild.co.jp/entry/2023/04/24/172723">Javaエンジニアだった私が当時困ったRustのコンセプト</a></li>
 <li><a href="https://laysakura.github.io/2020/05/21/rust-static-lifetime-and-static-bounds/">Rustの2種類の 'static</a></li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
 <h4 id="%E5%8F%82%E8%80%83">参考</h4>
 <ul>
 <li><a href="https://doc.rust-jp.rs/book-ja/ch10-02-traits.html">トレイト</a></li>
@@ -71,10 +73,10 @@
 <li><a href="https://doc.rust-lang.org/std/io/struct.BufReader.html">std::io::BufReader(docs.rs)</a></li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
 <h3 id="%E4%BB%98%E9%8C%B2%E3%81%93%E3%82%8C%E3%81%8B%E3%82%89rust%E3%82%92%E5%AD%A6%E3%81%B6%E9%9A%9B%E3%81%AE%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E3%83%BB%E5%8F%82%E8%80%83%E6%9B%B8">付録：これからRustを学ぶ際のドキュメント・参考書</h3>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
 <h3 id="%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88">オンラインドキュメント</h3>
 <ul>
 <li><a href="https://doc.rust-jp.rs/book-ja/">The Rust Programming Language 日本語版</a>: 公式ドキュメントの日本語訳．基本的にこれが最強．</li>
@@ -84,7 +86,7 @@
 <li><a href="https://rustmagazine.org/">Rust Magazine</a>: 有名クレートの作者が執筆した記事などあって面白い</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
 <h4 id="%E5%8F%82%E8%80%83%E6%9B%B8">参考書</h4>
 <ul>
 <li><a href="https://www.shuwasystem.co.jp/book/9784798061702.html">実践Rustプログラミング入門</a>: 今回のサンプルもここから．簡単なRustの紹介+チュートリアル集</li>
@@ -92,7 +94,7 @@
 <li><a href="https://gihyo.jp/book/2023/978-4-297-13322-1">パーフェクトRust</a>: 上記2冊を足して2で割ったような内容．2023/2/22発売のため内容も新しい．</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
 <h3 id="web%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB">webチュートリアル</h3>
 <ul>
 <li><a href="https://tourofrust.com/00_ja.html">Tour of Rust</a>: Tour of GoのRustバージョン．ブラウザ上で実行しながら構文を学べる．いつの間にか日本語になってた．</li>
