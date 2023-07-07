@@ -48,17 +48,26 @@
 </ol>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
-<p>怖がらないでライフタイム</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-rust"><span class="hljs-keyword">fn</span> <span class="hljs-title function_">f</span>&lt;<span class="hljs-symbol">&#x27;a</span>&gt;(p: &amp;<span class="hljs-symbol">&#x27;a</span> <span class="hljs-type">i32</span>) { ... }
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-rust"><span class="hljs-keyword">static</span> <span class="hljs-keyword">mut</span> STASH: &amp;<span class="hljs-type">i32</span> = &amp;<span class="hljs-number">128</span>
 <span class="hljs-keyword">fn</span> <span class="hljs-title function_">f</span>(p: &amp;<span class="hljs-type">i32</span>) { 
     <span class="hljs-keyword">unsafe</span> {
         STASH = p <span class="hljs-comment">// compile error lifetime `&#x27;static required`</span>
+    }
+}
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-class="lead invert" data-theme="uncover" class="lead invert" style="--class:lead invert;--theme:uncover;">
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-rust"><span class="hljs-keyword">impl</span>&lt;<span class="hljs-symbol">&#x27;i</span>, <span class="hljs-symbol">&#x27;t</span>, <span class="hljs-symbol">&#x27;a</span>, R, P, E: <span class="hljs-symbol">&#x27;i</span>&gt; RuleListParser&lt;<span class="hljs-symbol">&#x27;i</span>, <span class="hljs-symbol">&#x27;t</span>, <span class="hljs-symbol">&#x27;a</span>, P&gt;
+<span class="hljs-keyword">where</span>
+    P: QualifiedRuleParser&lt;<span class="hljs-symbol">&#x27;i</span>, QualifiedRule = R, Error = E&gt;
+        + AtRuleParser&lt;<span class="hljs-symbol">&#x27;i</span>, AtRule = R, Error = E&gt;,
+{
+    <span class="hljs-keyword">pub</span> <span class="hljs-keyword">fn</span> <span class="hljs-title function_">new_for_stylesheet</span>(input: &amp;<span class="hljs-symbol">&#x27;a</span> <span class="hljs-keyword">mut</span> Parser&lt;<span class="hljs-symbol">&#x27;i</span>, <span class="hljs-symbol">&#x27;t</span>&gt;, parser: P) <span class="hljs-punctuation">-&gt;</span> <span class="hljs-keyword">Self</span> {
+        <span class="hljs-comment">// ...</span>
     }
 }
 </code></pre>
